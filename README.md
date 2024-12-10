@@ -14,10 +14,10 @@ PM 1 명, 아키텍처 1명, DBA 1명, QA 1명, 백엔드 3명, 프론트엔드 
 
 
 ## 아키텍처
-
+![192664171-73d17c9c-0824-4d85-aadb-d154ff957e19](https://github.com/user-attachments/assets/37502b2c-3d58-433a-b4df-85c4da5f6792)
 
 ## DB ERD
-
+![0502 JPG](https://github.com/user-attachments/assets/c2c2019d-f2f8-467f-b85f-3d496cd5155f)
 
 ## 참여 내용
 -----
