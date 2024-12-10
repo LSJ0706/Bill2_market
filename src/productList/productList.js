@@ -1,13 +1,10 @@
 import React, {Fragment, useEffect, useMemo, useState, useRef} from "react";
 import "./productList.css";
-import {Link, useNavigate} from "react-router-dom";
-import {Card, Col, Row, Avatar, Button, Badge} from 'antd';
-import { HeartOutlined,HeartFilled, BorderOutlined } from '@ant-design/icons';
-import Meta from "antd/es/card/Meta";
+import {useNavigate} from "react-router-dom";
+import {Card, Col, Row, Button} from 'antd';
+import { HeartOutlined,HeartFilled } from '@ant-design/icons';
 import axios from "axios";
-import moment from "moment";
-import ProductViewDetailsPage from "../productViewDetails/productViewDetails";
-import {useSelector, useDispatch, batch} from "react-redux";
+import {useDispatch} from "react-redux";
 
 function ProductListPage() {
     const dispatchLocation = useDispatch();
@@ -18,7 +15,6 @@ function ProductListPage() {
     const [last, setLast] = useState(false);
     const [itemList, setItemList] = useState([]);
     const [itemMap, setItemMap] = useState(new Map());
-    // const [createDate, setCreateDate] = useState([moment().format('YYYY 년 MM월 DD일 HH시')]);
 
     const navigate = useNavigate();
 
@@ -54,7 +50,6 @@ function ProductListPage() {
         }
 
         }, []);
-    //itemMpa의 value에 따른 array를 itemList에 넣는 부분
     useEffect(() => {
         setItemList([...itemMap.values()])
 
